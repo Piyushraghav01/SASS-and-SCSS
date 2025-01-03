@@ -1,0 +1,33 @@
+@each $size in $img-size {
+  .img-#{$size} {
+    width: #{$size}px;
+    height: #{$size}px;
+  }
+}
+
+@each $key, $value in $colors {
+  .bg-#{$key} {
+    background-color: $value;
+  }
+
+  .text-#{$key} {
+    color: $value;
+  }
+
+  @if $value != white {
+    @for $i from 1 through 6 {
+      .bg-#{$key}-light-#{$i} {
+        background-color: mix(white, $value, $i * 12);
+      }
+    }
+  }
+}
+
+$a: 10;
+$b: 15;
+
+@if $a >$b {
+  @debug "A is greater than b";
+} @else {
+  @debug "B is greater than A";
+}

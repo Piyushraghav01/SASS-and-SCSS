@@ -1,0 +1,39 @@
+@mixin box-style($col: blue) {
+  color: $col;
+  border: $initial-border-thickness solid $col;
+  padding: $initial-padding;
+  border-radius: $initial-border-radius;
+}
+
+h1 {
+  color: $primary-color;
+}
+
+button {
+  background-color: $primary-color;
+  color: $secondary-color;
+  border-radius: $initial-border-radius;
+  padding: $initial-padding;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+a {
+  color: $secondary-color;
+}
+
+.error {
+  @include box-style($danger);
+  //   color: $danger;
+  //   border: $initial-border-thickness solid $danger;
+  //   padding: $initial-padding;
+  //   border-radius: $initial-border-radius;
+}
+
+.warning {
+  @include box-style;
+  //   color: $warning;
+  //   border: $initial-border-thickness solid $warning;
+  //   padding: $initial-padding;
+  //   border-radius: $initial-border-radius;
+}

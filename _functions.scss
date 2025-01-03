@@ -1,0 +1,5 @@
+@function comp-dark($col) {
+  $dark: darken($col, 20%);
+  $comp: complement($dark);
+  @return $comp;
+}

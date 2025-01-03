@@ -1,0 +1,16 @@
+.card {
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: white;
+  max-width: 40vw;
+}
+.card .header {
+  background-color: lightgrey;
+  height: 20px;
+}
+.card .body {
+  font-size: 1rem;
+}
+.card .body .title {
+  color: blue;
+}/*# sourceMappingURL=style.css.map */
